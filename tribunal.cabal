@@ -1,0 +1,50 @@
+cabal-version:      2.4
+name:               tribunal
+version:            0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+author:             Fumiaki Kinoshita
+maintainer:         fumiaki.kinoshita@herp.co.jp
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+
+library
+    main-is:          hs
+
+    exposed-modules:
+        Examples
+        ABAC
+        Class
+        Core
+        Term
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    ghc-options: -Wall -Wcompat -Wno-unticked-promoted-constructors
+    build-depends:    base ^>=4.16.1.0
+    hs-source-dirs:   src
+    default-language: GHC2021
+    default-extensions:
+        AllowAmbiguousTypes
+        ScopedTypeVariables
+        GADTs
+        TypeApplications
+        StandaloneDeriving
+        DataKinds
+        KindSignatures
+        LambdaCase
